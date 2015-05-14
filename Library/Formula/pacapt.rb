@@ -1,8 +1,8 @@
 class Pacapt < Formula
   homepage "https://github.com/icy/pacapt"
   url "https://github.com/icy/pacapt.git",
-    :revision => "70cae6c4022696decb6ac1f807a00049e589d9d4",
-    :tag => "v2.0.2"
+    :revision => "a7c5d2280c5e75a43efe67b937e327c32084c75e",
+    :tag => "v2.0.4"
 
   bottle do
     cellar :any
@@ -13,7 +13,7 @@ class Pacapt < Formula
 
   def install
     bin.mkpath
-    system "make", "install", "BINDIR=#{bin}"
+    system "make", "install", "BINDIR=#{bin} VERSION=v2.0.4"
   end
 
   test do
